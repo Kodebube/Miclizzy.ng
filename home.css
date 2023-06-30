@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: gainsboro;
+}
+
+#showmenu,
+#hidemenu {
+    display: none;
+}
+
+.container {
+    display: flex;
+    background: #fff;
+}
+
+nav {
+    overflow: auto;
+    margin: 1em auto auto 24em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(66, 133, 133);
+    padding: 9px;
+    background: none;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: block;
+    margin: auto 2px;
+}
+
+.container ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.container ul li:hover::after {
+    width: 100%;
+}
+
+li a:active {
+    color: yellow;
+}
+
+#musticon {
+    display: none;
+}
+
+.container img {
+    width: 70px;
+    height: 70px;
+}
+
+.container h1 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: darkslategray;
+}
+
+/*.container ::before {
+    content: ' ';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    margin-top: 45px;
+    background: linear-gradient(45deg, blue, purple, red);
+}*/
+.fa {
+    margin-left: 6px;
+}
+
+.begin {
+    background: url(bgg.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 70px;
+}
+
+.begin p {
+    font-size: 25px;
+    color: black;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.begin h1 {
+    color: black;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.begin span {
+    margin-left: 30px;
+}
+
+.begin a {
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid;
+    padding: 9px 30px;
+    margin-left: 30px;
+}
+
+.begin a:hover {
+    color: white;
+    background: linear-gradient(45deg, blue, purple, red);
+    border: none;
+}
+
+.beginn:hover {
+    font-weight: 600;
+}
+
+.texts {
+    overflow: hidden;
+    margin: 30px;
+}
+
+.texts span {
+    float: left;
+    border: 1px solid black;
+    border-radius: 10%;
+    background: rgb(255, 226, 192);
+    padding: 26px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin: auto 118px;
+    font-size: 40px;
+}
+
+.texts address {
+    font-size: 17px;
+    float: right;
+}
+
+.texts span:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+}
+
+.doc {
+    background: url(adoc.jpg) no-repeat center;
+    width: 500px;
+    height: 400px;
+    margin: 30px auto 30px 430px;
+}
+
+.doc:hover {
+    opacity: .8;
+}
+
+.doc a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    float: right;
+    padding: 190px 50px 50px 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background: rgb(27, 27, 27);
+    color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    height: 580px;
+}
+
+footer .container {
+    background: none;
+}
+
+.one {
+    background: none;
+    float: left;
+    min-width: 420px;
+    margin: 17px 46px 10px 46px;
+    position: static;
+}
+
+.one nav {
+    margin: 0;
+    overflow: auto;
+}
+
+.one nav h3 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 22px;
+    margin-bottom: 7px;
+    opacity: .8;
+}
+
+.one nav a {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .5;
+}
+
+.one nav a:hover {
+    color: white;
+    transition: 0.8 ease-in all;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#onee {
+    float: right;
+}
+
+footer .mumu {
+    margin-top: 25em;
+}
+
+footer .mumu p {
+    color: red;
+    font-size: 22px;
+    border: dotted 2px whitesmoke;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    #showmenu {
+        display: block;
+        font-size: 28px;
+        margin: 15px 30px;
+    }
+
+    #hidemenu {
+        display: block;
+        float: right;
+        margin: 0 0 50px 0;
+        font-size: 22px;
+        margin-left: 200px;
+    }
+
+    .container {
+        width: 100%;
+        height: 60px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .container h1 {
+        font-size: 17px;
+        padding: 0;
+        margin: 18px;
+        float: left;
+        position: absolute;
+        right: 0;
+    }
+
+    .container img {
+        width: 45px;
+        height: 45px;
+        float: right;
+        margin: 7px 20px 7px 30px;
+        display: none;
+    }
+
+    .container nav ul {
+        background: red;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -300px;
+        transition: 2s ease all;
+    }
+
+    .container ul li {
+        float: none;
+        margin: 20px;
+        width: 100px;
+    }
+
+    .container li a {
+        text-decoration: none;
+        color: white;
+        background: none;
+        text-align: left;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: sans-serif;
+        display: block;
+    }
+
+    li a:active {
+        color: yellow;
+    }
+    
+    #musticon {
+        display: block;
+        height: 200px;
+        width: 200px;
+        margin: 70px 12px 0 0;
+        opacity: .5;
+    }
+
+    /*---------- Body ----------*/
+    /*---------- Top ----------*/
+
+    .begin {
+        background: url(bgg.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 20%;
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .begin p {
+        font-size: 20px;
+        color: black;
+        margin-left: 30px;
+        margin-top: -30px;
+    }
+
+    .begin h1 {
+        color: black;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-bottom: -10px;
+    }
+
+    .begin span {
+        font-size: 11px;
+        margin-left: 30px;
+    }
+
+    .begin a {
+        border: 1px solid;
+        padding: 9px 10px;
+        font-size: 10px;
+    }
+
+    /*---------- Middle ----------*/
+
+    .texts span {
+        width: 180px;
+        height: 180px;
+        margin: 10px 15px;
+        font-size: 17px;
+    }
+
+    .texts address {
+        font-size: 10px;
+        float: right;
+    }
+
+    .doc {
+        background: url(adoc.jpg) no-repeat 44% 20%;
+        width: 300px;
+        height: 200px;
+        margin: 30px auto 30px 90px;
+    }
+
+    .doc a {
+        display: block;
+        font-size: 20px;
+        float: right;
+        padding: 120px 50px 50px 50px;
+    }
+
+    /*.doc a {
+        font-size: 25px;
+        padding: 190px 50px 50px 50px;
+    }
+
+    /*---------- Middle ----------*/
+    footer {
+        padding: 5px;
+        display: flex;
+        width: 80%;
+        height: 780px;
+    }
+
+    footer .container {
+        position: absolute;
+        left: -75px;
+    }
+
+    .one {
+        float: none;
+        min-width: 420px;
+        margin: 50px -15px;
+        position: static;
+    }
+
+    .one nav {
+        margin: 0;
+        overflow: auto;
+    }
+
+    .one nav h3 {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
+    .one nav a {
+        font-size: 9px;
+    }
+
+    #onee {
+        float: none;
+        display: flex;
+        position: absolute;
+        top: 1050px;
+        padding-left: 170px;
+    }
+
+    #one2 {
+        position: absolute;
+        top: 1250px;
+    }
+
+    #one3 {
+        margin-top: 400px;
+        position: absolute;
+        top: 1050px;
+    }
+
+    footer .mumu {
+        position: absolute;
+        top: 1300px;
+        font-size: 10px;
+    }
+
+    footer .mumu p {
+        font-size: 12px;
+        padding: 7px 2px;
+        margin-bottom: 12px;
+    }
+
+    /*
+    */
+}

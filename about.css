@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background: gainsboro;
+}
+.container {
+    display: flex;
+    background: #fff;
+}
+nav {
+    overflow: auto;
+    margin: 1em auto auto 24em;
+}
+ul {
+    list-style: none;
+}
+li {
+    float: left;
+}
+li a {
+    text-decoration: none;
+    color:  rgb(66, 133, 133);
+    padding: 9px;
+    background: none;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: block;
+    margin: auto 2px;
+}
+.container ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.container ul li:hover::after{
+    width: 100%;
+}
+li a:active {
+    color: yellow;
+}
+.container img {
+    width: 70px;
+    height: 70px;
+}
+.container h1 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: darkslategray;
+}
+/*--------body--------*/
+.body {
+    margin: 30px;
+    overflow: auto;
+    display: block;
+}
+.body h1 {
+    margin: 130px auto 130px 50px;
+    font-size: 5em;
+}
+.body p {
+    font-size: 2em;
+    font-family: sans-serif;
+    margin: auto 80px 20px 50px;
+}
+.body ul {
+    font-size: 2em;
+    font-family: sans-serif;
+    margin: auto 80px 20px 50px;
+    list-style-type: circle;
+}
+.body ul li {
+    margin-left: 40px;
+}
+footer {
+    background: rgb(27, 27, 27);
+    color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
